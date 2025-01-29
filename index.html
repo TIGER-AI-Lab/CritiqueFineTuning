@@ -2,51 +2,118 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <!-- Meta tags for social media banners -->
     <meta name="description" content="Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate">
     <meta property="og:title" content="Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate" />
-    <meta property="og:description" content="Research project on critique-based fine-tuning methods" />
+    <meta property="og:description" content="We propose Critique Fine-Tuning (CFT), where models learn to critique noisy responses rather than simply imitate correct ones." />
     <meta property="og:url" content="https://tiger-ai-lab.github.io/CritiqueFineTuning/" />
     <meta property="og:image" content="" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <title>Critique Fine-Tuning</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-
-        .buttonGroup {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .buttonGroup button {
-            padding: 15px 30px;
-            color: white;
-            background-color: #363636;
-            border: none;
-            border-radius: 5px;
-            margin: 0 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .buttonGroup button:hover {
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            background-color: #444444;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 
 <body>
-    <div class="buttonGroup">
-        <button onclick="window.location.href='https://github.com/TIGER-AI-Lab/CritiqueFineTuning'">GitHub</button>
-        <button onclick="window.location.href='#'">Paper</button>
-        <button onclick="window.location.href='#'">Dataset</button>
-    </div>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">
+                            Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate
+                        </h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                Yubo Wang,
+                            </span>
+                            <span class="author-block">
+                                Xiang Yue,
+                            </span>
+                            <span class="author-block">
+                                Wenhu Chen
+                            </span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- GitHub link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/TIGER-AI-Lab/CritiqueFineTuning" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- Paper link (placeholder) -->
+                                <span class="link-block">
+                                    <a href="#" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="ai ai-arxiv"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h1 class="title is-3">Abstract</h1>
+                    <div class="content has-text-justified">
+                        <p>
+                            Supervised Fine-Tuning (SFT) is commonly used to train language models to imitate annotated responses for given instructions. In this paper, we challenge this paradigm and propose Critique Fine-Tuning (CFT), a strategy where models learn to critique noisy responses rather than simply imitate correct ones. Inspired by human learning processes that emphasize critical thinking, CFT encourages deeper analysis and nuanced understanding-traits often overlooked by standard SFT.
+                        </p>
+                        <p>
+                            To validate the effectiveness of CFT, we construct a 50K-sample dataset from WebInstruct, using GPT-4o as the teacher to generate critiques in the form of (input=[query; noisy response], output=critique). CFT on this dataset yields a consistent 4–10% improvement over SFT on six math benchmarks with different base models like Qwen2.5, Qwen2.5-Math and DeepSeek-Math. We further expand to MetaMath and NuminaMath datasets and observe similar gains over SFT. Notably, our Qwen2.5-Math-CFT model-trained on just 50K samples-matches or outperforms competitive models such as AceMath and Qwen2.5-Math-Instruct on most benchmarks, both of which use over 2M samples. Ablation studies show that CFT is robust to the source of noisy response and teacher critique model. Through these findings, we argue that critique-based training offers a more effective alternative to advance the reasoning of language models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BibTeX citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">Reference</h2>
+            Please kindly cite our paper if you use our code or results:
+            <pre><code>@article{wang2024critique,
+    title={Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate},
+    author={Wang, Yubo and Yue, Xiang and Chen, Wenhu},
+    journal={},
+    year={2024}
+}</code></pre>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content has-text-centered">
+                        <p>
+                            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
