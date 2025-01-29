@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CritiqueFineTuning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .authors {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #024ea7;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .abstract {
+            background-color: #f6f8fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2em;
+            }
+
+            .button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">CritiqueFineTuning</h1>
+        <div class="authors">
+            Yubo Wang, Xiang Yue, Wenhu Chen
+        </div>
+        <div class="links">
+            <a href="https://github.com/TIGER-AI-Lab/CritiqueFineTuning" class="button">GitHub</a>
+            <a href="#" class="button">Paper</a>
+            <a href="#" class="button">Dataset</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Abstract</h2>
+        <div class="abstract">
+            Supervised Fine-Tuning (SFT) is commonly used to train language models to imitate annotated responses for given instructions. In this paper, we challenge this paradigm and propose Critique Fine-Tuning (CFT), a strategy where models learn to critique noisy responses rather than simply imitate correct ones. Inspired by human learning processes that emphasize critical thinking, CFT encourages deeper analysis and nuanced understanding-traits often overlooked by standard SFT. To validate the effectiveness of CFT, we construct a 50K-sample dataset from WebInstruct, using GPT-4o as the teacher to generate critiques in the form of (input=[query; noisy response], output=critique). CFT on this dataset yields a consistent 4–10% improvement over SFT on six math benchmarks with different base models like Qwen2.5, Qwen2.5-Math and DeepSeek-Math. We further expand to MetaMath and NuminaMath datasets and observe similar gains over SFT. Notably, our Qwen2.5-Math-CFT model-trained on just 50K samples-matches or outperforms competitive models such as AceMath and Qwen2.5-Math-Instruct on most benchmarks, both of which use over 2M samples. Ablation studies show that CFT is robust to the source of noisy response and teacher critique model. Through these findings, we argue that critique-based training offers a more effective alternative to advance the reasoning of language models.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Overview</h2>
+        [Project overview and key features]
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Results</h2>
+        [Key results and findings]
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Citation</h2>
+        <pre>
+[Citation information]
+        </pre>
+    </div>
+</body>
+</html>
