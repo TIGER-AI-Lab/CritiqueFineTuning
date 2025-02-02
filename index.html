@@ -269,6 +269,96 @@
     </section>
     <!-- End image carousel -->
 
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h1 class="title is-1">Case Study</h1>
+                    <div class="content has-text-justified">
+                        <p>
+                            Here we showcase a detailed example comparing the performance of CFT with the original model. This case demonstrates how CFT helps improve mathematical reasoning abilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="box">
+                            <div class="content">
+                                <h3 class="title is-4">Problem:</h3>
+                                <p class="has-text-justified">
+                                    Sam is carrying a 2 gallon bucket of milk to his house from the barn, which is 3 miles away from his house. However, the bucket has a leak in it. For each mile he walks, there is $\frac{2}{3}$ as much milk in the bucket as at the beginning of the mile. How many gallons of milk will be in the bucket when Sam gets home?
+                                </p>
+
+                                <div class="columns is-multiline mt-4">
+                                    <div class="column is-full">
+                                        <h3 class="title is-4">Detailed Solutions:</h3>
+                                    </div>
+
+                                    <div class="column is-half">
+                                        <div class="notification is-success">
+                                            <h4 class="title is-5">CFT Model Solution (Correct)</h4>
+                                            <div class="content has-text-justified">
+                                                <p>To solve this problem, we need to calculate the amount of milk left in the bucket after Sam walks 3 miles, given that the bucket leaks such that the amount of milk remaining after each mile is $\frac{2}{3}$ of the amount at the beginning of the mile.</p>
+
+                                                <p><strong>Step-by-step reasoning:</strong></p>
+                                                <ol>
+                                                    <li><strong>Initial Amount of Milk</strong>: The bucket starts with 2 gallons of milk.</li>
+                                                    <li><strong>After the First Mile</strong>: The amount of milk left is $\frac{2}{3}$ of the initial amount. So, after the first mile, the amount of milk is $2 \cdot \frac{2}{3} = \frac{4}{3}$ gallons.</li>
+                                                    <li><strong>After the Second Mile</strong>: The amount of milk left is $\frac{2}{3}$ of the amount after the first mile. So, after the second mile, the amount of milk is $\frac{4}{3} \cdot \frac{2}{3} = \frac{8}{9}$ gallons.</li>
+                                                    <li><strong>After the Third Mile</strong>: The amount of milk left is $\frac{2}{3}$ of the amount after the second mile. So, after the third mile, the amount of milk is $\frac{8}{9} \cdot \frac{2}{3} = \frac{16}{27}$ gallons.</li>
+                                                </ol>
+
+                                                <p>Final Answer: $\boxed{\frac{16}{27}}$ gallons</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column is-half">
+                                        <div class="notification is-danger">
+                                            <h4 class="title is-5">Original Model Solution (Incorrect)</h4>
+                                            <div class="content has-text-justified">
+                                                <p>To solve this problem, we need to determine how much milk remains in the bucket after Sam has walked 3 miles, given that the bucket loses $\frac{1}{3}$ of its milk for each mile he walks. This means that after each mile, the amount of milk left in the bucket is $\frac{2}{3}$ of the amount at the beginning of the mile.</p>
+
+                                                <p><strong>Step-by-step reasoning:</strong></p>
+                                                <ol>
+                                                    <li>Initially, the bucket contains 2 gallons of milk.</li>
+                                                    <li>After the first mile, the bucket will contain $2 \times \frac{2}{3}$ gallons of milk.</li>
+                                                    <li>After the second mile, the bucket will contain the amount from the first mile multiplied by $\frac{2}{3}$, which is $2 \times (\frac{2}{3})^2$ gallons of milk.</li>
+                                                    <li>After the third mile, the bucket will contain the amount from the second mile multiplied by $\frac{2}{3}$, which is $2 \times (\frac{2}{3})^3$ gallons of milk.</li>
+                                                </ol>
+
+                                                <p>Final Answer: $\boxed{\frac{8}{27}}$ gallons</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h3 class="title is-4">Key Differences:</h3>
+                                    <div class="content has-text-justified">
+                                        <ul>
+                                            <li>The CFT model maintains precise step-by-step calculations, showing each intermediate fraction.</li>
+                                            <li>The original model has the right approach but makes calculation errors in the final steps.</li>
+                                            <li>CFT demonstrates better ability to track and compute sequential fraction multiplications.</li>
+                                            <li>The original model's error shows how small mistakes in mathematical reasoning can lead to significant differences in the final answer.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- BibTeX citation -->
     <section class="section" id="BibTeX">
