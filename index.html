@@ -411,6 +411,81 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Case Study 3: CFT vs SFT (Worker Efficiency Problem) -->
+                <div class="box mb-6">
+                    <h3 class="title is-4">Case Study 3: Worker Efficiency Problem</h3>
+                    <div class="content">
+                        <div class="notification is-info is-light mb-4">
+                            <h4 class="title is-5">Problem:</h4>
+                            <p>Each good worker can paint my new house alone in 12 hours. Each bad worker can paint my house alone in 36 hours. I need my house painted in 3 hours. If I can only find 3 good workers, how many bad workers must I also find in order to have my house painted on time?</p>
+                        </div>
+
+                        <div class="columns is-multiline">
+                            <div class="column is-half">
+                                <div class="notification is-success">
+                                    <h4 class="title is-5">CFT Model Solution</h4>
+                                    <div class="content has-text-justified">
+                                        <p><strong>Step-by-step solution:</strong></p>
+                                        <ol>
+                                            <li><strong>Good worker rate:</strong><br>
+                                                Each good worker: $\frac{1}{12}$ house/hour<br>
+                                                3 good workers: $3 \times \frac{1}{12} = \frac{1}{4}$ house/hour</li>
+                                            <li><strong>Time available:</strong><br>
+                                                3 hours total</li>
+                                            <li><strong>Good workers' contribution:</strong><br>
+                                                In 3 hours: $3 \times \frac{1}{4} = \frac{3}{4}$ of house</li>
+                                            <li><strong>Remaining work for bad workers:</strong><br>
+                                                $1 - \frac{3}{4} = \frac{1}{4}$ of house</li>
+                                            <li><strong>Bad worker contribution:</strong><br>
+                                                Each bad worker in 3 hours: $3 \times \frac{1}{36} = \frac{1}{12}$ of house</li>
+                                            <li><strong>Number of bad workers needed:</strong><br>
+                                                $\frac{1/4}{1/12} = 3$ workers</li>
+                                        </ol>
+                                        <p class="has-text-weight-bold">Final Answer: $\boxed{3}$ bad workers (Correct)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-half">
+                                <div class="notification is-warning">
+                                    <h4 class="title is-5">SFT Model Solution</h4>
+                                    <div class="content has-text-justified">
+                                        <p><strong>Analysis of approach:</strong></p>
+                                        <ol>
+                                            <li>Started with correct work rates:
+                                                <ul>
+                                                    <li>Good worker: $\frac{1}{12}$ house/hour</li>
+                                                    <li>Bad worker: $\frac{1}{36}$ house/hour</li>
+                                                </ul>
+                                            </li>
+                                            <li>Made several critical errors:
+                                                <ul>
+                                                    <li>Incorrectly interpreted the remaining work</li>
+                                                    <li>Mixed up rate equations</li>
+                                                    <li>Introduced unrelated concepts (tank filling)</li>
+                                                </ul>
+                                            </li>
+                                            <li>Arrived at incorrect conclusion through faulty reasoning</li>
+                                        </ol>
+                                        <p class="has-text-weight-bold">Final Answer: $\boxed{12}$ bad workers (Incorrect)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h4 class="title is-5">Key Observations:</h4>
+                            <div class="content has-text-justified">
+                                <ul>
+                                    <li>CFT model maintains clear focus on the problem's core concept of work rates and time</li>
+                                    <li>SFT model shows significant confusion in problem interpretation and solution approach</li>
+                                    <li>CFT demonstrates superior ability in handling multistep rate problems with different worker types</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
