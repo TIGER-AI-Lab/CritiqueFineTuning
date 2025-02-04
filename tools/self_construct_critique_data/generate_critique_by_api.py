@@ -172,7 +172,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    os.makedirs(args.output_dir, exist_ok=True)
+    # os.makedirs(args.output_dir, exist_ok=True)
     process_large_dataset(
         model_name=args.model_name,
         input_path=args.input_path,
