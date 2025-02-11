@@ -70,6 +70,8 @@ Fill in the model path and evaluation result save path in tools/scripts/evaluate
 cd tools/scripts
 bash evaluate.sh
 ```
+Hardware may have a slight impact on evaluation results based on our testing. To fully reproduce our results, we recommend testing on A6000 GPU with CUDA 12.4 and vllm==0.6.6. For more environment details, please refer to requirements.txt
+
 
 Note: Our evaluation code is modified from [Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math) and [MAmmoTH](https://github.com/TIGER-AI-Lab/MAmmoTH).
 
