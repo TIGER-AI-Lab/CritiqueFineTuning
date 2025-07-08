@@ -1,6 +1,6 @@
 # CritiqueFineTuning
 
-This repo contains the code for [Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate](https://arxiv.org/abs/2501.17703). In this paper, we introduce Critique Fine-Tuning (CFT) - a paradigm shift in LLM training where models learn to critique rather than imitate!  
+This repo contains the code for our COLM2025 paper [Critique Fine-Tuning: Learning to Critique is More Effective than Learning to Imitate](https://arxiv.org/abs/2501.17703). In this paper, we introduce Critique Fine-Tuning (CFT) - a paradigm shift in LLM training where models learn to critique rather than imitate!  
 
 <a target="_blank" href="https://github.com/TIGER-AI-Lab/CritiqueFineTuning">
 <img style="height:22pt" src="https://img.shields.io/badge/-Code-black?style=flat&logo=github"></a>
